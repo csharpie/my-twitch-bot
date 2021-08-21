@@ -18,7 +18,7 @@ const client = new tmi.Client({
     reconnect: true
   },
   channels: [
-    '103ghostreptile'
+    process.env.TWITCH_CHANNEL
     ],
     identity: {
       username: process.env.TWITCH_BOT_USERNAME,
